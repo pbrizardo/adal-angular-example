@@ -1,0 +1,19 @@
+<div>
+  <h1>Login</h1>
+
+  <button ng-click="login.logout()">Logout</button>
+  <button ng-click="login.login()">Login</button>
+  <button ng-click="login.getUser()">Get User Info</button>
+
+  <p ng-show="login.loginInProgress()">
+    Traveling to portal...
+  </p>
+  <p class="success">
+    {{login.loginMessage}}
+  </p>
+  <h3>userInfo object</h3>
+  <pre>
+    {{userInfo}}
+  </pre>
+
+</div>
